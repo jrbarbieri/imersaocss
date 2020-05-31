@@ -9,6 +9,29 @@ body {
   background-size: auto 100vh;
   font-family: Arial;
   height: 100vh;
+  font-size: 10px;
+}
+
+/* Se a tela tiver pelo menos 400 pixeis de largura, irá carregar esses estilos */
+/* Breakpoints */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 450px) {
+  body {
+    font-size: 18px;
+    background-image: none;
+    background-color: grey;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    font-size: 24px;
+  }
 }
 
 header {
@@ -44,6 +67,11 @@ header {
   text-align: center;
   color: white;
 }
+
+.site-title {
+  font-size: 3em;
+}
+
 
 .site-subtitle {
   font-style: italic;
