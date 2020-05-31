@@ -11,8 +11,18 @@ body {
   height: 100vh;
 }
 
+header {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu {
   background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
 .menu ul {
@@ -24,11 +34,15 @@ body {
   list-style: none;
 }
 
+.menu a {
+  display: block;
+  padding: 10px 20px;
+}
+
 .site-subtitle,
 .site-title {
-  background-color: white;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .site-subtitle {
@@ -44,3 +58,7 @@ a:hover {
   text-decoration: underline;
 }
 
+.img-portfolio {
+  height: 180px;
+  width: 180px;
+}
