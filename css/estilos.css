@@ -92,6 +92,11 @@ a:hover {
   background-color: black;
 }
 
+.portfolio h2 {
+  color: white;
+  font-family: 'Major Mono Display', monospace;
+}
+
 .img-portfolio {
   height: 180px;
   width: 180px;
