@@ -17,6 +17,7 @@ body {
 @media (min-width: 400px) {
   body {
     font-size: 14px;
+    font-family: 'Roboto', sans-serif;
   }
 }
 
@@ -42,7 +43,7 @@ header {
 }
 
 .menu {
-  background-color: white;
+  background-color: grey;
   position: fixed;
   width: 100vw;
   top: 0;
@@ -70,20 +71,25 @@ header {
 
 .site-title {
   font-size: 3em;
+  font-family: 'Major Mono Display', monospace;
 }
 
-
 .site-subtitle {
-  font-style: italic;
+  text-align: center;
+  color: white;
+  opacity: 70%;
+  font-size: 1.2em;
+  line-height: 2.5em;
 }
 
 a {
-  color: orange;
+  color: white;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  background-color: black;
 }
 
 .img-portfolio {
