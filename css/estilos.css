@@ -36,17 +36,39 @@ body {
 }
 
 header {
-  height: 40vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .menu {
-  background-color: grey;
+  background-color: white;
   position: fixed;
   width: 100vw;
   top: 0;
+  z-index: 1;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+  transition: background-color, color, 0.5s;
+}
+
+.menu a:active,
+.menu a:hover {
+  background-color: gray;
+  color: white;
 }
 
 .menu ul {
@@ -58,9 +80,19 @@ header {
   list-style: none;
 }
 
-.menu a {
-  display: block;
-  padding: 10px 20px;
+.titulos {
+  animation: linear 1s animacaoTitulos forwards;
+}
+
+@keyframes animacaoTitulos {
+  from {
+    transform: scale(0.5) translateY(10vh);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 01;
+  }
 }
 
 .site-subtitle,
@@ -82,21 +114,12 @@ header {
   line-height: 2.5em;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-  background-color: black;
-}
-
+.contato,
 .portfolio {
   padding: 2em;
-  height: 100vh;
+  min-height: 100vh;
 }
-
+.contato h2,
 .portfolio h2 {
   color: white;
   text-align: center;
@@ -140,4 +163,26 @@ a:hover {
   object-position: left bottom;
   border-radius: 10%;
   filter: grayscale(100%);
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+.img-portfolio:hover {
+  transform: scale(1.2);
+}
+
+.contato a {
+  color: black;
+  font-size: 1.8em;
+  transition: 0.7s;
+}
+
+.contato a:active,
+.contato a:hover {
+  background-color: transparent;
+  text-shadow: 0px 0px 5px rgb(255, 255, 255, 0.5);
+}
+
+.contato .icons {
+  text-align: center;
 }
