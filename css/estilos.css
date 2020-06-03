@@ -140,10 +140,18 @@ a:hover {
   background-color: white;
 }
 
+.sobre .avatar {
+	float: left;
+	margin-right: 1em;
+}
+
+.sobre .avatar img {
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
 .sobre p {
 	color: white;
 	margin-bottom: 1.4em;
-	text-indent: 1.4em;
 	text-align: justify;
 }
 
