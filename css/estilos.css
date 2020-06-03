@@ -52,11 +52,25 @@ a:hover {
 }
 
 .menu {
+  display: flex;
   background-color: white;
   position: fixed;
   width: 100vw;
   top: 0;
   z-index: 1;
+}
+
+.menu .teste-icon {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .menu .teste-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
 
 .menu a {
@@ -73,7 +87,6 @@ a:hover {
 
 .menu ul {
   display: flex;
-  justify-content: space-around;
 }
 
 .menu li {
